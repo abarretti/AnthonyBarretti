@@ -1,9 +1,10 @@
-<?php
-class HeadView
+<?php namespace ABS\Classes;
+
+class HeadViewClass
 {
 	private $model;
 	
-	public function __construct(Model $model)
+	public function __construct(ModelClass $model)
 	{
 		$this->model= $model;
 	}
@@ -12,7 +13,7 @@ class HeadView
 	{
 		return '<head>
 				<meta charset="UTF-8">
-				<title>Anthony Barretti - '.$this->model->page.'</title>
+				<title>Anthony Barretti - '.($this->model->page=="cv"? 'CV':ucwords($this->model->page)).'</title>
 				<link rel="icon" type="image/png" href="imgs/sphereBlue.png">
 				<link rel="stylesheet" href="css/stylesheet.css">
 				</head>

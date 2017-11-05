@@ -1,10 +1,10 @@
-<?php
+<?php namespace ABS\Classes;
 
-class Controller 
+class ControllerClass 
 {
 	private $model;
 
-	public function __construct(Model $model)
+	public function __construct(ModelClass $model)
 	{
 		$this->model= $model;
 	}

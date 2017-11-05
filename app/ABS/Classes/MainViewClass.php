@@ -1,10 +1,10 @@
-<?php
+<?php namespace ABS\Classes;
 
-class MainView
+class MainViewClass
 {
 	private $model;
 
-	public function __construct(Model $model)
+	public function __construct(ModelClass $model)
 	{
 		$this->model= $model;
 	}
@@ -20,7 +20,7 @@ class MainView
     	</figure>
     	<div class="right">
 			<h2>Hi, I&#39;m Anthony! Welcome and thank you for visiting my site.</h2>
-			<p>I am a motivated, multi-skilled Business Intelligence, Data Science and Software Engineering professional who is currently employed as a Senior Product Associate within Wayfair&#39;s Data Integration team. My primary functions are to provide support, offer analysis and drive innovation pertaining to Wayfair&#39;s Electronic Data Interchange (EDI) platform. I also possess six years of proven experience providing data analytics, business intelligence, accounting and financial services support in diverse industries with corporate clients.</p>
+			<p>I am a motivated, multi-skilled Data Analytics and Software Engineering professional who is currently employed as a Product Manager within Wayfair&#39;s Data Integration team. My primary functions are to provide support, offer analysis and drive innovation pertaining to Wayfair&#39;s Electronic Data Interchange (EDI) platform. I also possess six years of proven experience providing data analytics, business intelligence, accounting and financial services support in diverse industries with corporate clients.</p>
 			<p>I received my BS in Accounting from Rutgers University earning honors as an inductee of both Beta Alpha Psi and the National Society of Collegiate Scholars. Outside of the classroom, I served as President and Treasurer of my fraternity (Alpha Chi Rho). Following the completion of my undergraduate degree, I immediately matriculated into the Rutgers Graduate Business School and earned my Masters in Financial Accounting the following year. After five years of professional development providing accounting and financial services support, I entered the University of Oxford&#39;s Data and Systems Analysis program to enhance my Software Engineering and Data Science skill set.</p>
 		</div>
 		</main>';
@@ -114,6 +114,8 @@ class MainView
 				alt= "PHP">
 				<img src= "imgs/python.png"
 				alt= "Python">
+				<img src= "imgs/rLogo.png"
+				alt= "R">
     		</div>
     		<div class="right skills">
     			<h2>Microsoft Office (Excel, Word, PowerPoint, Access)</h2>
@@ -126,6 +128,8 @@ class MainView
 				<ul><li>1 year of applicable experience and 1 Code Academy Certification earned</li></ul>
 				<h2>Python</h2>
 				<ul><li>1 year of applicable experience and 5 Coursera Certifications earned</li></ul>
+				<h2>R</h2>
+				<ul><li>3 months of applicable experience and 1 Coursera Certifications earned</li></ul>
 				<h2>Extensible Markup Language (XML)</h2>	
 				<ul><li>1 year of applicable experience creating documents in an Electronic Data Interchange setting</li></ul>
 				<h2>File Transfer Protocol (FTP)</h2>
@@ -147,7 +151,7 @@ class MainView
     		<div class="right experience">
     			<h2>Wayfair</h2>
     			<p>Berlin, Germany</p>
-    			<p>Senior Product Associate - Data Integration, August 2016 - present</p>
+    			<p>Product Manager - Data Integration, August 2016 - present</p>
     			<ul> 
 			  		<li>Supervise and troubleshoot operational and finance-related data transfers for EU business partners with aggregate volume of over 100K files daily.</li>
 					<li>Create and develop requirements specifications for the implementation of new carrier and supplier data integrations to increase profitability through efficient and cost-effective EDI.</li>

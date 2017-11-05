@@ -2,19 +2,21 @@
 <html lang="en">
 <?php
 
-require 'class/modelClass.php';
-require 'class/headClass.php';
-require 'class/headerClass.php';
-require 'class/mainClass.php';
-require 'class/footerClass.php';
-require 'class/controllerClass.php';
+use ABS\Classes\ModelClass as ModelClass;
+use ABS\Classes\ControllerClass as ControllerClass;
+use ABS\Classes\FooterViewClass as FooterViewClass;
+use ABS\Classes\HeaderViewClass as HeaderViewClass;
+use ABS\Classes\HeadViewClass as HeadViewClass;
+use ABS\Classes\MainViewClass as MainViewClass;
 
-$model = new Model();
-$headView = new HeadView($model);
-$headerView = new HeaderView($model);
-$mainView= new MainView($model);
-$footerView = new FooterView($model);
-$controller= new Controller($model);
+require_once __DIR__.'/app/start.php';
+
+$model = new ModelClass();
+$headView = new HeadViewClass($model);
+$headerView = new HeaderViewClass($model);
+$mainView= new MainViewClass($model);
+$footerView = new FooterViewClass($model);
+$controller= new ControllerClass($model);
 
 if (isset($_GET['action']))
 {
@@ -29,4 +31,4 @@ echo $footerView->output();
 ?>
 </html>
 
-<!-- Desktop/PHP/AnthonyBarrettiSiteMVC/index.php -->
+<!-- php Desktop/PHP/AnthonyBarrettiSiteSILEX/index.php -->

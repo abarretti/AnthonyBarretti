@@ -1,6 +1,6 @@
-<?php
+<?php namespace ABS\Classes;
 
-class Model 
+class ModelClass
 {
 	public $page;
 
