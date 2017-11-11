@@ -1,0 +1,15 @@
+<head>
+	<meta charset="UTF-8">
+	<title>Anthony Barretti - {% block title %} Page Name {% endblock %}</title>
+	<link rel="icon" type="image/png" href="imgs/sphereBlue.png">
+	<link rel="stylesheet" href="css/stylesheet.css">
+</head>
+<body>
+<header>
+	{% block header %} {% endblock %}
+</header>
+	{% block main %} {% endblock %}
+<footer>
+	&copy; Anthony Barretti {{ "now"|date("Y") }}
+</footer>
+</body>

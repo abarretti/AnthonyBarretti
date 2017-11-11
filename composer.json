@@ -1,6 +1,8 @@
 {
 	"require": {
-        "monolog/monolog": "1.0.*"
+        "monolog/monolog": "1.0.*",
+		"silex/silex": "~2.0",
+		"twig/twig": "^1.35"
     },
 
     "autoload": {

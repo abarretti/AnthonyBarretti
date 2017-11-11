@@ -6,7 +6,7 @@ class ModelClass
 
 	public function __construct()
 	{
-		$this->page= "home";
+		$this->page= 'home.twig';
 	}
 }
 

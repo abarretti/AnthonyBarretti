@@ -11,22 +11,22 @@ class ControllerClass
 
 	public function home()
 	{
-		$this->model->page = "home";
+		$this->model->page = 'home.twig';
 	}
 
 	public function about()
 	{
-		$this->model->page = "about";
+		$this->model->page = 'about.twig';
 	}
 
 	public function cv()
 	{
-		$this->model->page = "cv";
+		$this->model->page = 'cv.twig';
 	}
 
 	public function contact()
 	{
-		$this->model->page = "contact";
+		$this->model->page = 'contact.twig';
 	}
 }
 

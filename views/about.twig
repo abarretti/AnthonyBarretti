@@ -1,0 +1,49 @@
+{% extends 'base.twig' %}
+
+{% block title %}
+
+About
+
+{% endblock %}
+
+{% block header %}
+
+	<h1>Anthony Barretti</h1>
+		<h2>Data Science - Business Intelligence - Software Engineering</h2>
+		<nav>
+			<div><a href="index.php?action=home" >Home</a></div>
+			<div><a href="index.php?action=about" class="active">About</a></div><div><a href="index.php?action=cv">CV</a></div><div><a href="index.php?action=contact" >Contact</a></div>
+			<div><a href="https://www.linkedin.com/in/anthony-barretti-95a57687/" class="image" target="_blank"><img src="imgs/linkedIn.png"
+			width="75px"
+			alt= "LinkedIn Logo"/></a></div>
+			<div><a href="https://github.com/abarretti/" class="image" target="_blank"><img src="imgs/github.png"
+			width= "75px"
+			alt= "Github Logo"/></a></div>
+		</nav>
+
+{% endblock %}
+
+{% block main %}
+
+	<main class="about">
+		<aside class= "left">
+			<img src= "imgs/albertHall.jpg" 
+			alt= "Albert Hall">
+			<img src= "imgs/reichstag.jpg" 
+			alt= "Reichstag">
+			<img src= "imgs/stonePony.jpg" 
+			alt= "Manager Shot">
+    	</aside class="right">
+    	<div class="right">
+			<h2>About Me</h2>
+			<p>I first discovered my passion for IT in 2011 during my tenure as a Music Industry Manager. It was through this role that I received the opportunity to assist with web design and online promotion for three music projects. I was able to utilize my basic HTML and JavaScript skills in a professional capacity, which I had learned from Rutgers University’s Computer Applications course. I am proud to say that the online following of the music projects rose from 1,500 followers to over 20,000 during my time in this role. Furthermore, our efforts led to a production contract with a “Platinum Record Winning” Producer and also a record contract with Canadian-American Records. Similar to the composition of music itself, I greatly enjoyed the creative nature of these IT-routed tasks along with the opportunity to solve problems through the utilization of imperative knowledge.</p>
+			<p>My interest in IT was later reaffirmed when I accepted employment as an Accountant for Covanta Energy. In this role, I utilized and gained competency with the company’s ERP system, Oracle PeopleSoft. Although my position was in Accountancy, my primary passion and interest during my tenure was learning about the functionality of PeopleSoft as an Accounting Information System. I was intrigued by the system’s comprehensible interfaces, which allowed users the ability to effortlessly interrogate the company’s data with ease. This provoked a desire to become more knowledgeable in IT in general. My employing Director granted me security clearance as a “power” user so I could provide the Accounts Receivable department with basic application support. My Manager also appointed me the primary staff tester for the UAT testing for the Corporation’s upgrade to PeopleSoft 9.2. This allowed me to work closely with IT Consultants as we collaborated on testing and together resolved issues with the new system. As my assignment progressed, I developed a closer relationship with Covanta’s Technical and Application Support Analysts. I began to strengthen my SQL skills so that I could better understand how to interrogate databases. I also began studying the concepts of object-oriented programming to further understand the back-end functionality of the applications offered by ERP Systems.</p>
+			<p>After my assignment at Covanta, I chose to re-enroll at university to continue my IT education with the intention of eventually completing a full transition into an IT career. I began my studies in October 2015 as a part-time student of the Advanced Diploma in Data &amp; Systems Analysis program at the University of Oxford. It was through this program that I was first introduced formally to the software development lifecycle. The program also re-enforced my understanding of dataflow diagramming and database architecture, particularly as it relates to the Relational Model. The final element of the program focused on object-oriented programming in Java. The course culminated in a final project in which we designed a database and software system for a fictitious theater company. I am proud to say that I graduated from the program with a 98.20% course average and earned distinction.</p>
+			<p>	After my studies, I accepted an internship in Business Intelligence at the Berlin start-up company, Move24. It was in this role that I first began to put my newly acquired skillset to use with advanced data modeling to assist the Sales, Marketing, Business Development and Operations departments. I also utilized SQL daily to query the company’s database as needed, and was introduced to Python to extract data as necessary from various sources.</p>
+			<p>At the conclusion of my internship, I began full-time employment as a Senior Product Associate within the Data Integration team at Wayfair. In my current role, I assist with monitoring and troubleshooting data transfers with the company’s EU business partners. I also still utilize my business intelligence skillset to create, calculate and analyze KPI’s for presentation to Senior Management. The other aspect of the position is to continuously drive tech-related projects across multiple engineering departments to achieve data integration objectives.</p>
+			<p>My IT journey thus far has been nothing short of amazing! I personally feel just as passionate today as when I started, and I am very excited to see what the future has in store as I continue my journey.</p>
+			<p>Thank you again for taking the time to visit my website!</p>
+		</div>
+	</main>
+
+{% endblock %}
