@@ -9,12 +9,14 @@ About
 {% block navigation %}
 
 		<nav>
-			<div><a href="index.php?action=home" >Home</a></div>
-			<div><a href="index.php?action=about" class="active">About</a></div><div><a href="index.php?action=cv">CV</a></div><div><a href="index.php?action=contact" >Contact</a></div>
-			<div><a href="https://www.linkedin.com/in/anthony-barretti-95a57687/" class="image" target="_blank"><img src="imgs/linkedIn.png"
+			<div><a href="{{ url }}">Home</a></div>
+			<div><a href="{{ url }}/index.php/about" class="active">About</a></div>
+			<div><a href="{{ url }}/index.php/cv">CV</a></div>
+			<div><a href="{{ url }}/index.php/contact">Contact</a></div>
+			<div><a href="https://www.linkedin.com/in/anthony-barretti-95a57687/" class="image" target="_blank"><img src="/../imgs/linkedIn.png"
 			width="75px"
 			alt= "LinkedIn Logo"/></a></div>
-			<div><a href="https://github.com/abarretti/" class="image" target="_blank"><img src="imgs/github.png"
+			<div><a href="https://github.com/abarretti/" class="image" target="_blank"><img src="/../imgs/github.png"
 			width= "75px"
 			alt= "Github Logo"/></a></div>
 		</nav>
@@ -25,11 +27,11 @@ About
 
 	<main class="about">
 		<aside class= "left">
-			<img src= "imgs/albertHall.jpg" 
+			<img src= "/../imgs/albertHall.jpg" 
 			alt= "Albert Hall">
-			<img src= "imgs/reichstag.jpg" 
+			<img src= "/../imgs/reichstag.jpg" 
 			alt= "Reichstag">
-			<img src= "imgs/stonePony.jpg" 
+			<img src= "/../imgs/stonePony.jpg" 
 			alt= "Manager Shot">
     	</aside class="right">
     	<div class="right">

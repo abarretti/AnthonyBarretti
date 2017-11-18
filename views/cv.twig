@@ -9,20 +9,22 @@ CV
 {% block navigation %}
 
 		<nav>
-			<div><a href="index.php?action=home" >Home</a></div>
-			<div><a href="index.php?action=about" >About</a></div><div class="dropdown">
-					<a href="index.php?action=cv" class="active">CV</a> 
+			<div><a href="{{ url }}" >Home</a></div>
+			<div><a href="{{ url }}/index.php/about" >About</a></div><div class="dropdown">
+					<a href="{{ url }}/index.php/cv" class="active">CV</a> 
 					<div class="dropdown-content">
 					<a href="#education">Education</a>
 					<a href="#skills">Skills</a>
 					<a href="#experience">Experience</a>
 					<a href="#leadership">Leadership</a>
 					<a href="#coursework">Coursework</a>
-					</div></div><div><a href="index.php?action=contact" >Contact</a></div>
-			<div><a href="https://www.linkedin.com/in/anthony-barretti-95a57687/" class="image" target="_blank"><img src="imgs/linkedIn.png"
+					</div>
+					</div>
+			<div><a href="{{ url }}/index.php/contact" >Contact</a></div>
+			<div><a href="https://www.linkedin.com/in/anthony-barretti-95a57687/" class="image" target="_blank"><img src="/../imgs/linkedIn.png"
 			width="75px"
 			alt= "LinkedIn Logo"/></a></div>
-			<div><a href="https://github.com/abarretti/" class="image" target="_blank"><img src="imgs/github.png"
+			<div><a href="https://github.com/abarretti/" class="image" target="_blank"><img src="/../imgs/github.png"
 			width= "75px"
 			alt= "Github Logo"/></a></div>
 		</nav>
@@ -37,7 +39,7 @@ CV
 				<h1>Education</h1>
 			</div>
 			<div class="left education">
-				<img src= "imgs/oxford.png"
+				<img src= "/../imgs/oxford.png"
 				alt= "Oxford">
     		</div>
     		<div class="right education">
@@ -50,7 +52,7 @@ CV
 		    	</ul>
     		</div>
     		<div class="left education">
-				<img src= "imgs/rutgers.png"
+				<img src= "/../imgs/rutgers.png"
 				alt= "Rutgers">
     		</div>
     		<div class="right education">
@@ -62,7 +64,7 @@ CV
 		     	</ul>
     		</div>
     		<div class="left education">
-				<img src= "imgs/rutgers.png"
+				<img src= "/../imgs/rutgers.png"
 				alt= "Rutgers">
     		</div>
     		<div class="right education">
@@ -79,21 +81,21 @@ CV
     	<section>
 			<div class="head" id="skills">
 				<h1>Skills</h1>
-				<a href="#top"><img src= "imgs/arrowUp.png"
+				<a href="#top"><img src= "/../imgs/arrowUp.png"
 				alt= "Arrow Up"></a>
 			</div>
 			<div class="left skills">
-				<img src= "imgs/microsoftOffice.png"
+				<img src= "/../imgs/microsoftOffice.png"
 				alt= "Microsoft Office">
-				<img src= "imgs/microsoftSQLServer.png"
+				<img src= "/../imgs/microsoftSQLServer.png"
 				alt= "Microsoft SQL Server">
-				<img src= "imgs/hTML5_CSS_JavaScript.png"
+				<img src= "/../imgs/hTML5_CSS_JavaScript.png"
 				alt= "HTML5, CSS3, JavaScript">
-				<img src= "imgs/phpElephant.png"
+				<img src= "/../imgs/phpElephant.png"
 				alt= "PHP">
-				<img src= "imgs/python.png"
+				<img src= "/../imgs/python.png"
 				alt= "Python">
-				<img src= "imgs/rLogo.png"
+				<img src= "/../imgs/rLogo.png"
 				alt= "R">
     		</div>
     		<div class="right skills">
@@ -120,11 +122,11 @@ CV
     	<section>
 			<div class="head" id="experience">
 				<h1>Relevant Experience</h1>
-				<a href="#top"><img src= "imgs/arrowUp.png"
+				<a href="#top"><img src= "/../imgs/arrowUp.png"
 				alt= "Arrow Up"></a>
 			</div>
 			<div class="left experience">
-				<img src= "imgs/wayfair.png"
+				<img src= "/../imgs/wayfair.png"
 				alt= "Wayfair">
     		</div>
     		<div class="right experience">
@@ -139,7 +141,7 @@ CV
 		   		</ul>
     		</div>
     		<div class="left experience">
-				<img src= "imgs/move24.png"
+				<img src= "/../imgs/move24.png"
 				alt= "Move 24">
     		</div>
     		<div class="right experience">
@@ -154,7 +156,7 @@ CV
 		   		</ul>
     		</div>
     			<div class="left experience covanta">
-				<img src= "imgs/covanta.png"
+				<img src= "/../imgs/covanta.png"
 				alt= "Covanta">
     		</div>
     		<div class="right experience covanta">
@@ -171,9 +173,9 @@ CV
 		   		</ul>
     		</div>
     		<div class="left experience eraz">
-				<img src= "imgs/runningLate.jpg"
+				<img src= "/../imgs/runningLate.jpg"
 				alt= "Running Late">
-				<img src= "imgs/circusAnimal.jpg"
+				<img src= "/../imgs/circusAnimal.jpg"
 				alt= "Circus Animal">
     		</div>
     		<div class="right experience eraz">
@@ -191,11 +193,11 @@ CV
     	<section>
 			<div class="head">
 				<h1>Pre-Graduate Experience</h1>
-				<a href="#top"><img src= "imgs/arrowUp.png"
+				<a href="#top"><img src= "/../imgs/arrowUp.png"
 				alt= "Arrow Up"></a>
 			</div>
 			<div class="left experience mspc">
-				<img src= "imgs/mspc.png"
+				<img src= "/../imgs/mspc.png"
 				alt= "MSPC">
     		</div>
     		<div class="right experience mspc">
@@ -210,7 +212,7 @@ CV
 		   		</ul>
 		   	</div>
 			<div class="left experience mirra">
-				<img src= "imgs/mirra.png"
+				<img src= "/../imgs/mirra.png"
 				alt= "Mirra">
     		</div>
     		<div class="right experience mirra">
@@ -228,11 +230,11 @@ CV
 		<section>
 			<div class="head" id="leadership">
 				<h1>University Leadership</h1>
-				<a href="#top"><img src= "imgs/arrowUp.png"
+				<a href="#top"><img src= "/../imgs/arrowUp.png"
 				alt= "Arrow Up"></a>
 			</div>
 			<div class="left experience axp">
-				<img src= "imgs/aXP.jpg"
+				<img src= "/../imgs/aXP.jpg"
 				alt= "Alpha Chi Rho">
     		</div>
     		<div class="right experience axp">
@@ -251,7 +253,7 @@ CV
 		<section>
 			<div class= "head" id="coursework">
 				<h1>Relevant Coursework</h1>
-				<a href="#top"><img src= "imgs/arrowUp.png"
+				<a href="#top"><img src= "/../imgs/arrowUp.png"
 				alt= "Arrow Up"></a>
     		</div>
     		<div class="courseWork">
