@@ -2,12 +2,10 @@
 
 class ModelClass
 {
-	public $page;
+    public $page;
 
-	public function __construct()
-	{
-		$this->page= 'home.twig';
-	}
+    public function __construct()
+    {
+        $this->page= 'home.twig';
+    }
 }
-
-?>
