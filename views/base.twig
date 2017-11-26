@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Anthony Barretti - {% block title %} Page Name {% endblock %}</title>
+	<link rel="icon" type="image/png" href="/../imgs/sphereBlue.png">
+	<link rel="stylesheet" href="/../css/stylesheet.css">
+</head>
+{% block body %} Body Class {% endblock %}
+{% block header %} Header Class {% endblock %}
+	<h1>Anthony Barretti</h1>
+	<h2>Data Science - Business Intelligence - Software Engineering</h2>
+	{% block navigation %} {% endblock %}
+</header>
+	{% block main %} {% endblock %}
+{% block footer %} Footer Class {% endblock %}
+	&copy; Anthony Barretti {{ "now"|date("Y") }}
+</footer>
+</body>
+</html>

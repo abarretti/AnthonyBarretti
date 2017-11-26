@@ -1,34 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
 <?php
 
-use ABS\Classes\ModelClass as ModelClass;
-use ABS\Classes\ControllerClass as ControllerClass;
-use ABS\Classes\FooterViewClass as FooterViewClass;
-use ABS\Classes\HeaderViewClass as HeaderViewClass;
-use ABS\Classes\HeadViewClass as HeadViewClass;
-use ABS\Classes\MainViewClass as MainViewClass;
+date_default_timezone_set("America/New_York");
 
-require_once __DIR__.'/app/start.php';
+require_once __DIR__ . '/vendor/autoload.php';
 
-$model = new ModelClass();
-$headView = new HeadViewClass($model);
-$headerView = new HeaderViewClass($model);
-$mainView= new MainViewClass($model);
-$footerView = new FooterViewClass($model);
-$controller= new ControllerClass($model);
+$app = new Silex\Application();
 
-if (isset($_GET['action']))
-{
-	$controller->{$_GET['action']}();
-}
+$app['debug']=true;
 
-echo $headView->output();
-echo $headerView->output();
-echo $mainView->output($model->page);
-echo $footerView->output();
+$url= 'http://'.$_SERVER['SERVER_NAME'];
 
-?>
-</html>
+$app->register(new Silex\Provider\TwigServiceProvider(), array(
+        'twig.path' => __DIR__.'/views',
+    ));
 
-<!-- php Desktop/PHP/AnthonyBarrettiSiteSILEX/index.php -->
+$app->get('/', function () use ($app, $url) {
+    return $app['twig']->render('home.twig', ['url'=>$url]);
+});
+
+$app->get('/about', function () use ($app, $url) {
+    return $app['twig']->render('about.twig', ['url'=>$url]);
+});
+
+$app->get('/cv', function () use ($app, $url) {
+    return $app['twig']->render('cv.twig', ['url'=>$url]);
+});
+
+$app->get('/contact', function () use ($app, $url) {
+    return $app['twig']->render('contact.twig', ['url'=>$url]);
+});
+
+$app->run();
+
+// php Desktop/PHP/AnthonyBarrettiSiteSILEX/index.php -->

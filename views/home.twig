@@ -1,0 +1,51 @@
+{% extends 'base.twig' %}
+
+{% block title %}
+
+Home
+
+{% endblock %}
+
+{% block body %}
+
+	<body class="home">
+
+{% endblock %}
+
+{% block header %}
+
+	<header class="home">
+
+		<figure class="left">
+			<img src= "/../imgs/sphereBlue.png" 
+			alt= "Sphere Blue">
+    	</figure>
+
+{% endblock %}
+
+{% block navigation %}
+
+		<nav class="home">
+			<div><a href="{{ url }}" class="active">Home</a></div>
+			<div><a href="{{ url }}/index.php/about" >About</a></div>
+			<div><a href="{{ url }}/index.php/cv">CV</a></div>
+			<div><a href="{{ url }}/index.php/contact" >Contact</a></div>
+			<div><a href="https://www.linkedin.com/in/anthony-barretti-95a57687/" class="image" target="_blank"><img src="/../imgs/linkedIn.png"
+			width="75px"
+			alt= "LinkedIn Logo"/></a></div>
+			<div><a href="https://github.com/abarretti/" class="image" target="_blank"><img src="/../imgs/github.png"
+			width= "75px"
+			alt= "Github Logo"/></a></div>
+		</nav>
+
+{% endblock %}
+
+{% block main %}
+
+{% endblock %}
+
+{% block footer %} 
+
+	<footer class="home"> 
+
+{% endblock %}
